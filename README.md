@@ -1,69 +1,135 @@
-# HealthyChefBot – AI Nutritionist Agent
+# 🥗 HealthyChefBot – AI Nutritionist Agent
 
 ## Overview
 
-HealthyChefBot is an AI-powered nutrition and recipe assistant built using n8n, Telegram, and Anthropic Claude.
+HealthyChefBot is an AI-powered nutrition and recipe assistant built using n8n, Claude AI, Telegram, and conversational memory.
 
-The bot helps users discover healthy recipes based on available ingredients while considering dietary preferences, allergies, and health goals.
+The chatbot helps users discover healthy recipes based on available ingredients while considering dietary preferences, allergies, and health goals. The solution demonstrates how Large Language Models (LLMs) can be integrated into workflow automation platforms to create personalized AI assistants.
 
-## Features
+---
 
-* AI-powered recipe recommendations
-* Personalized nutrition guidance
-* Conversation memory for user preferences
-* Telegram chatbot interface
-* Claude-powered recipe generation
-* Macro and calorie estimation
+## Project Objective
 
-## Tech Stack
+The objective of this project was to build a practical AI agent capable of:
+
+* Understanding user requests through natural language
+* Remembering user preferences throughout a conversation
+* Generating personalized healthy recipes
+* Providing nutritional guidance
+* Delivering responses through Telegram
+
+---
+
+## Technologies Used
 
 * n8n
-* Anthropic Claude Haiku
+* Anthropic Claude Haiku 4.5
 * Telegram Bot API
 * AI Agent Node
 * Memory Buffer
+* Prompt Engineering
+
+---
 
 ## Workflow Architecture
 
 1. User sends a message through Telegram.
 2. Telegram Trigger receives the request.
-3. AI Agent processes the message.
-4. Claude generates a healthy recipe recommendation.
-5. Memory stores user preferences and goals.
-6. Response is sent back through Telegram.
+3. AI Agent processes the user's message.
+4. Claude AI generates a personalized response.
+5. Memory Buffer stores conversation context and user preferences.
+6. The generated recipe or nutrition advice is sent back to the user via Telegram.
+
+---
+
+## Features
+
+### Personalized Recipe Generation
+
+The AI recommends healthy recipes based on ingredients provided by the user.
+
+### Nutrition Guidance
+
+Provides calorie estimates and macronutrient information.
+
+### Conversational Memory
+
+Remembers dietary preferences, allergies, and health goals during the conversation.
+
+### Telegram Integration
+
+Allows users to interact with the AI assistant through a familiar messaging platform.
+
+### AI-Powered Responses
+
+Uses Claude AI to generate natural and contextual recommendations.
+
+---
 
 ## Example Use Case
 
-User Input:
+### User Input
 
-"I have chicken, broccoli and rice. I want to lose weight."
+I have chicken, broccoli and rice. I want to lose weight.
 
-Bot Output:
+### AI Response
 
-* Healthy recipe suggestion
-* Calories per serving
-* Protein, carbohydrates and fat breakdown
-* Simple preparation steps
+* Healthy recipe recommendation
+* Preparation time
+* Estimated calories
+* Protein, carbohydrate and fat breakdown
+* Cooking instructions
+
+---
 
 ## Skills Demonstrated
 
+This project demonstrates practical experience in:
+
 * AI Agent Development
 * Workflow Automation
-* Prompt Engineering
-* Memory Management
-* LLM Integration
 * Conversational AI
+* Prompt Engineering
+* LLM Integration
+* Context and Memory Management
 * API Integration
+* No-Code / Low-Code Automation
+* Problem Solving
+
+---
+
+## Challenges Solved
+
+* Maintaining conversation context across multiple interactions
+* Creating personalized responses based on user goals
+* Integrating AI services with messaging platforms
+* Designing a structured prompt for consistent outputs
+
+---
 
 ## Future Improvements
 
-* Recipe database integration
+Planned enhancements include:
+
+* Meal planning capabilities
 * Grocery list generation
-* Meal planning
-* User profile dashboard
-* Nutrition tracking
+* User profile management
+* Nutrition tracking dashboard
+* Integration with external nutrition databases
+* Multi-language support
+
+---
+
+## Security Notice
+
+Sensitive credential identifiers, webhook IDs, and instance metadata have been removed from the public workflow export.
+
+---
 
 ## Author
 
 Akhila Varakil
-Data Analytics & AI Automation Enthusiast
+
+Data Analytics | AI Automation | Machine Learning Enthusiast
+
+Currently exploring AI Agents, LangGraph, n8n Automation, Data Analytics, and Applied AI Solutions.
